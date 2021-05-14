@@ -1,0 +1,8 @@
+E:\unicode_converter\test\test\Debug\test.vcxproj.CopyComplete
+E:\unicode_converter\test\test\Debug\test.exe
+E:\unicode_converter\test\test\Debug\icuucd69.dll
+E:\unicode_converter\test\test\Debug\icudtd69.dll
+E:\unicode_converter\test\vstest\Debug\test.vcxproj.CopyComplete
+E:\unicode_converter\test\vstest\Debug\test.exe
+E:\unicode_converter\test\vstest\Debug\icuucd69.dll
+E:\unicode_converter\test\vstest\Debug\icudtd69.dll
