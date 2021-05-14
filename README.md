@@ -14,3 +14,14 @@ For later assembling purpose, the project provided Visual Studio sln and cmake c
 
 Tests for each lib are tested under MSVC and Cygwin. 
 
+## Build 
+
+### MSVC
+```
+    cmake -B build -A Win32 -DCMAKE_TOOLCHAIN_FILE=D:/vcpkg/scripts/buildsystems/vcpkg.cmake
+```
+
+### Cygwin 
+```
+    cmake -B build 
+``` 

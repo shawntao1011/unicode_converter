@@ -29,3 +29,12 @@ target_link_libraries(test2 PRIVATE Boost::locale)
 add_executable(test3 collate.cpp)
 target_include_directories(test3 PRIVATE Boost::locale)
 target_link_libraries(test3 PRIVATE Boost::locale)
+
+add_executable(test4 conversions.cpp)
+target_include_directories(test4 PRIVATE Boost::locale)
+target_link_libraries(test4 PRIVATE Boost::locale)
+
+add_executable(test5 hello.cpp)
+target_include_directories(test5 PRIVATE Boost::locale)
+target_link_libraries(test5 PRIVATE Boost::locale)
+

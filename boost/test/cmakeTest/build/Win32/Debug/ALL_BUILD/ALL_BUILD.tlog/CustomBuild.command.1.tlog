@@ -1,0 +1,10 @@
+^E:\UNICODE_CONVERTER\BOOST\TEST\CMAKETEST\CMAKELISTS.TXT
+setlocal
+"D:\visual studio\Common7\IDE\CommonExtensions\Microsoft\CMake\CMake\bin\cmake.exe" -SE:/unicode_converter/boost/test/cmakeTest -BE:/unicode_converter/boost/test/cmakeTest/build --check-stamp-file E:/unicode_converter/boost/test/cmakeTest/build/CMakeFiles/generate.stamp
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
