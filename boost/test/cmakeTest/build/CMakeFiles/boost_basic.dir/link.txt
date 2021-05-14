@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -Wl,--enable-auto-import CMakeFiles/boost_basic.dir/boost_utility.cpp.o -o boost_basic.exe -Wl,--out-implib,libboost_basic.dll.a -Wl,--major-image-version,0,--minor-image-version,0  /usr/lib/libboost_locale.dll.a 

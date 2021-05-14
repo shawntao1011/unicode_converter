@@ -1,3 +1,13 @@
+#####################################
+# before cmake configure:
+# #use vcpkg to install boost on windows
+# ```
+# vcpkg install icu
+# ``` 
+# 
+# windows cygwin please use the install exe
+#####################################
+
 CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
 
 project(sample)
