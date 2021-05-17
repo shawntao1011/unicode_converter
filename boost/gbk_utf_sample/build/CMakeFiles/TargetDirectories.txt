@@ -1,0 +1,3 @@
+/cygdrive/e/unicode_converter/boost/gbk_utf_sample/build/CMakeFiles/rebuild_cache.dir
+/cygdrive/e/unicode_converter/boost/gbk_utf_sample/build/CMakeFiles/edit_cache.dir
+/cygdrive/e/unicode_converter/boost/gbk_utf_sample/build/CMakeFiles/mytest.dir

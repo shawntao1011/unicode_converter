@@ -1,0 +1,1 @@
+/usr/bin/c++.exe -Wl,--enable-auto-import CMakeFiles/mytest.dir/utf_gbk_sample.cpp.o -o mytest.exe -Wl,--out-implib,libmytest.dll.a -Wl,--major-image-version,0,--minor-image-version,0  /usr/lib/libboost_locale.dll.a 

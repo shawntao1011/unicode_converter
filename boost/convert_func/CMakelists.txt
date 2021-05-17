@@ -1,0 +1,14 @@
+CMAKE_MINIMUM_REQUIRED(VERSION 3.5)
+
+project(lib_test)
+
+option(PACKAGE_TESTS "Building the test" ON)
+if (PACKAGE_TESTS)
+    enable_testing()
+    include(GoogleTest)
+    add_subdirectory(tests)
+endif()
+
+
+
+    
