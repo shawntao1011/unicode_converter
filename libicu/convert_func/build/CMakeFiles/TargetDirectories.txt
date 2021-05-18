@@ -1,0 +1,7 @@
+/cygdrive/e/unicode_converter/boost/convert_func/build/CMakeFiles/rebuild_cache.dir
+/cygdrive/e/unicode_converter/boost/convert_func/build/CMakeFiles/edit_cache.dir
+/cygdrive/e/unicode_converter/boost/convert_func/build/src/CMakeFiles/rebuild_cache.dir
+/cygdrive/e/unicode_converter/boost/convert_func/build/src/CMakeFiles/edit_cache.dir
+/cygdrive/e/unicode_converter/boost/convert_func/build/src/CMakeFiles/sample.dir
+/cygdrive/e/unicode_converter/boost/convert_func/build/tests/CMakeFiles/rebuild_cache.dir
+/cygdrive/e/unicode_converter/boost/convert_func/build/tests/CMakeFiles/edit_cache.dir
