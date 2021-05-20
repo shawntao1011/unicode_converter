@@ -12,16 +12,55 @@ For later assembling purpose, the project provided Visual Studio sln and cmake c
 
 
 
-Tests for each lib are tested under MSVC and Cygwin. 
+#Tests for each lib are tested under MSVC and Cygwin. 
 
 ## Build 
 
 ### MSVC
-```
-    cmake -B build -A Win32 -DCMAKE_TOOLCHAIN_FILE=D:/vcpkg/scripts/buildsystems/vcpkg.cmake
+
+​	**config:**
+
+```cmake
+    cmake -B build -A Win32 -DCMAKE_TOOLCHAIN_FILE={cmake tool path}
 ```
 
-### Cygwin 
+​	**Build:**
+
+​			**Debug build:**
+
+```cmake
+	cmake --build build
 ```
+
+​			**Release build:**
+
+```cmake
+	cmake --build build --config Release
+```
+
+
+
+### Cygwin 
+
+#### 	config:
+
+​		**Debug build**
+
+```cmake
     cmake -B build 
-``` 
+```
+
+​		**Release build**
+
+```cmake
+	cmake -B build -DCMAKE_BUILDTYPE=Release
+```
+
+​	**Build:**
+
+```
+	cmake --build build
+```
+
+
+
