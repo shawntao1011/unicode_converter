@@ -1,7 +1,26 @@
 #include <boost/locale/encoding.hpp>
 
-namespace utilities{
-    inline std::string boost_converter(std::string const& text,std::string const&to_encoding,std::string const&from_encoding);
-}
+#ifdef _WIN32
+#   ifdef CE_util4q_EXPORTS
+#   define util4q_API  __declspec(dllexport)
+#   else
+#   define util4q_API  __declspec(dllimport)
+#   endif
+#   define API_DECL  __cdecl
+#else
+#   define util4q_API
+#   define API_DECL
+#endif
 
-const auto converter=utilities::boost_converter;
+#ifdef __cplusplus
+extern "C"{
+#endif
+    util4q_API 
+    char const*
+    API_DECL boost_converter(char const* text,char const* to_encoding,char const* from_encoding);
+
+#ifdef __cplusplus
+}
+#endif
+
+//const auto converter=utilities::boost_converter;
