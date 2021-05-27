@@ -7,10 +7,14 @@
 //         return boost::locale::conv::between(text,to_encoding,from_encoding).c_str();
 // }
 
-std::string
-boost_converter(std::string text,std::string to_encoding,std::string from_encoding)
+char const*
+boost_converter(char const* text,char const* to_encoding,char const* from_encoding)
 {
-        return boost::locale::conv::between(text,to_encoding,from_encoding).c_str();
+    std::string temp_str = boost::locale::conv::between(text, to_encoding, from_encoding);
+    char* ptr = new char[temp_str.size() + 1];
+    strcpy(ptr, temp_str.c_str());
+
+    return ptr;
 }
 
 
@@ -18,7 +22,7 @@ int main(){
     //std::string temp="▒<9B><90>▒<84>";
     std::string temp="\xD6""\xD0""\xCE""\xC4";
     std::cout<<"sample chinese char is "<<temp<<std::endl;
-    auto temp_utf8 = boost_converter(temp,"UTF-8","GBK");
+    char const* temp_utf8 = boost_converter(temp.c_str(),"UTF-8","GBK");
     std::cout<<"after convert1: "<<temp_utf8<<std::endl;
 
     auto temp_gbk = boost_converter(temp_utf8,"GBK","UTF-8");
